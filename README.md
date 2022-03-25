@@ -1,4 +1,6 @@
 # Double or nothing
+![donss6](https://user-images.githubusercontent.com/70858634/160214311-18a7b8a6-6c80-4b1d-9481-9f1b71f18fd3.png)
+![donss8](https://user-images.githubusercontent.com/70858634/160214315-cde85be8-328d-4066-a8e2-e185de3cbe19.png)
 
 ## Warning
 **This software is provided as is without warranty of any kind.** While an effort has been made to reduce the chance of bad things happening as a result of this software, absolutely no guarantees are made as to its safety. In particular, this software uses *insecure* RNG, **which may allow a malicious player to potentially predict and manipulate outcomes.** Use this software at your own risk.

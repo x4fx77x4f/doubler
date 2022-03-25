@@ -23,6 +23,7 @@ local gameover = -GAMEOVERANIM_DURATION
 local timeout
 local is_admin = me == owner()
 local admin_panel = false
+local DON_NOMTX = DON_NOMTX -- for use with init_screenshot
 
 local mm = Matrix()
 local mmt = Vector()
@@ -32,10 +33,12 @@ local mms = Vector(mmsm, mmsm)
 mm:setScale(mms)
 
 local mtx = Matrix()
-mtx:setTranslation(Vector(0, 512))
-mtx:setAngles(Angle(0, -90, 0))
 local mult = 1.5
-mtx:setScale(Vector(mult, mult))
+if not DON_NOMTX then
+	mtx:setTranslation(Vector(0, 512))
+	mtx:setAngles(Angle(0, -90, 0))
+	mtx:setScale(Vector(mult, mult))
+end
 
 local bg = Color(15, 15, 15)
 hook.add('render', HOOK_NAME, function()
